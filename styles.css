@@ -1,0 +1,33 @@
+body{
+    background-color: #FFD1DC;
+}
+
+#mainHeader{
+    background-color: #FFD1DC;
+    font-family: cursive;
+    color: #FF1493;
+    text-align: center;
+    padding: 1rem;
+}
+
+ul{
+    list-style-type: circle;
+    color: #FF1493;
+    text-align: center;
+  }
+
+  li{
+    display: inline-block;
+  }
+
+  h2,h3{
+    color: #FF1493;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+ 
