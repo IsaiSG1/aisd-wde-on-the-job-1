@@ -30,4 +30,36 @@ ul{
     padding: 1rem;
     margin: 1rem;
   }
- 
+
+
+  #mainFooter{
+    background-color: #FFD1DC;
+    font-family: cursive;
+    color: #FF1493;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .grid-container {
+    display: grid; /* This defines a grid container */
+    grid-template-columns: repeat(auto-fill, minmax(239px, 1fr)); /* Creates responsive columns that fit the available space */
+    gap: 1px; /* Adds a 10px gap between grid items */
+    padding: 5px;
+    max-width: 1000px;
+    width: 100%;
+    justify-items: center; /* Centers items horizontally within their grid area */
+    align-items: center; /* Centers items vertically within their grid area */
+  }
+
+  .grid-item {
+    /* Optionally, if you want to ensure images fit well */
+    display: flex; /* Allows centering within each grid item */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+img {
+  width: 100%; /* Full width of the grid item */
+  height: 100%; /* Full height of the grid item */
+  object-fit: cover; /* Ensures the image fills the grid item */
+}
