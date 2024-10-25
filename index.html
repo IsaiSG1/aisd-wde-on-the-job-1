@@ -6,59 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pure Elegance Beauty</title>
     <link rel="stylesheet" href="styles.css"> <!-- External CSS File -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         body {
+            background-color: #FFD1DC;
+        }
+
+        /* Additional custom styles */
+        .hero-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Main Navigation -->
     <header>
-        <nav>
-            <h1 id="mainHeader">Pure Elegance Beauty</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#Testimonials">Testimonials</a></li>
-                <li><a href="#Gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Pure Elegance Beauty</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Main Content Area -->
     <main>
         <!-- Hero Section -->
-                 <section id="home">
-            <h2>Welcome to Pure Elegance Beauty</h2>
-            <p>Pure Elegance Beauty is a trusted beauty salon in San Marcos, CA! Our team of experienced estheticians is dedicated to providing you with the highest quality of service. At Pure Elegance Beauty, we offer a wide range of services, including facials, full body waxing, lash extensions, body wraps, lash lifts, brow lamination, hairstyling, and body contouring.
-
-                Our facial spa and skin care treatments are designed to leave your skin feeling refreshed and rejuvenated. Our expert estheticians use only the finest ingredients and proven methods to ensure that your skin is smooth and radiant. We specialize in couple facials, providing personalized treatments for both partners to address their individual skin concerns. If you're looking for a full body waxing treatment, look no further than Pure Elegance Beauty. Our experienced technicians use the latest techniques to ensure you achieve the smoothest possible results.
-                
-                We also have tooth gems that will add a touch of sparkle to your smile, while our make up artists are experts at creating the perfect look for your special occasion. At Pure Elegance Beauty, we believe that everyone should have access to high-quality beauty services. That's why we offer a wide range of options at affordable prices. Contact us today to schedule your next appointment!</p>
-                <div class="grid-container" class="grid-item">
-                <img src=images\pic1.jpg alt="skin care">
-                <img src=images\pic2.jpg alt="skin care">
-                <img src=images\pic3.jpg alt="skin care">  
-                <img src=images\pic4.jpg alt="skin care">
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2 class="display-4">Welcome to Pure Elegance Beauty</h2>
+                <p class="lead">Pure Elegance Beauty is a trusted beauty salon in San Marcos, CA! Our team of experienced estheticians is dedicated to providing you with the highest quality of service. At Pure Elegance Beauty, we offer a wide range of services, including facials, full body waxing, lash extensions, body wraps, lash lifts, brow lamination, hairstyling, and body contouring.</p>
+                <p>Our facial spa and skin care treatments are designed to leave your skin feeling refreshed and rejuvenated. Our expert estheticians use only the finest ingredients and proven methods to ensure that your skin is smooth and radiant. We specialize in couple facials, providing personalized treatments for both partners to address their individual skin concerns. If you're looking for a full body waxing treatment, look no further than Pure Elegance Beauty. Our experienced technicians use the latest techniques to ensure you achieve the smoothest possible results.</p>
+                <p>We also have tooth gems that will add a touch of sparkle to your smile, while our make-up artists are experts at creating the perfect look for your special occasion. At Pure Elegance Beauty, we believe that everyone should have access to high-quality beauty services. That's why we offer a wide range of options at affordable prices. Contact us today to schedule your next appointment!</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/pic1.jpg" alt="skin care" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/pic2.jpg" alt="skin care" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/pic3.jpg" alt="skin care" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/pic4.jpg" alt="skin care" class="img-fluid">
+                    </div>
                 </div>
+            </div>
         </section>
 
         <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>At Pure Elegance Beauty, we understand that maintaining a healthy and beautiful appearance is important to our clients. Our team of experts is dedicated to providing excellent service in every aspect of beauty care, from facial treatments to full body waxing and lash extensions. Our facial treatments use the most advanced technology and top-quality skin care products to help rejuvenate and refresh your skin, leaving you with a radiant glow. Our full body waxing services are performed with the utmost care and attention to detail, using only the finest waxing products to ensure a smooth and flawless finish. And for those looking to enhance their natural beauty, our lash extension services are the perfect solution. We use only the highest quality lashes and adhesive, resulting in a stunning, natural look for weeks. With Pure Elegance Beauty, you can trust that you are receiving the best care possible and leaving with an elegant and pure look. Book your appointment today and experience the Pure Elegance Beauty difference.</p>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">About Us</h2>
+                <p class="text-center">At Pure Elegance Beauty, we understand that maintaining a healthy and beautiful appearance is important to our clients. Our team of experts is dedicated to providing excellent service in every aspect of beauty care, from facial treatments to full body waxing and lash extensions. Our facial treatments use the most advanced technology and top-quality skin care products to help rejuvenate and refresh your skin, leaving you with a radiant glow.</p>
+                <p class="text-center">Our full body waxing services are performed with the utmost care and attention to detail, using only the finest waxing products to ensure a smooth and flawless finish. And for those looking to enhance their natural beauty, our lash extension services are the perfect solution. We use only the highest quality lashes and adhesive, resulting in a stunning, natural look for weeks. With Pure Elegance Beauty, you can trust that you are receiving the best care possible and leaving with an elegant and pure look. Book your appointment today and experience the Pure Elegance Beauty difference.</p>
+            </div>
         </section>
 
         <!-- Services Section -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <article>
-                <h3>Service 1</h3>
-                <p>Details about service 1.</p>
-            </article>
-            <article>
-                <h3>Service 2</h3>
-                <p>Details about service 2.</p>
-            </article>
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="mb-3">
+                            <h3>Service 1</h3>
+                            <p>Details about service 1.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="mb-3">
+                            <h3>Service 2</h3>
+                            <p>Details about service 2.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
