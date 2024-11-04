@@ -64,18 +64,3 @@ img {
   object-fit: cover; /* Ensures the image fills the grid item */
 }
 
-body {
-  background-color: #FFD1DC;
-}
-
-/* Additional custom styles */
-.hero-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-.grid-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
