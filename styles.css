@@ -1,66 +1,98 @@
-body{
-    background-color: #FFD1DC;
+body {
+  background-color: #FFD1DC;
 }
 
-#mainHeader{
-    background-color: #FFD1DC;
-    font-family: cursive;
-    color: #FF1493;
-    text-align: center;
-    padding: 1rem;
+#mainHeader {
+  background-color: #FFD1DC;
+  font-family: cursive;
+  color: #FF1493;
+  text-align: center;
+  padding: 1rem;
 }
 
-ul{
-    list-style-type: circle;
-    color: #FF1493;
-    text-align: center;
-  }
+ul {
+  list-style-type: circle;
+  color: #FF1493;
+  text-align: center;
+}
 
-  li{
-    display: inline-block;
-  }
+li {
+  display: inline-block;
+}
 
-  h2,h3{
-    color: #FF1493;
-    text-align: center;
-  }
+h2, h3 {
+  color: #FF1493;
+  text-align: center;
+}
 
-  p{
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-  }
+p {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
 
+#mainFooter {
+  background-color: #FFD1DC;
+  font-family: cursive;
+  color: #FF1493;
+  text-align: center;
+  padding: 1rem;
+}
 
-  #mainFooter{
-    background-color: #FFD1DC;
-    font-family: cursive;
-    color: #FF1493;
-    text-align: center;
-    padding: 1rem;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
+  gap: 10px;
+  padding: 5px;
+  max-width: 1000px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
 
-  .grid-container {
-    display: grid; /* This defines a grid container */
-    grid-template-columns: repeat(auto-fill, minmax(239px, 1fr)); /* Creates responsive columns that fit the available space */
-    gap: 1px; /* Adds a 10px gap between grid items */
-    padding: 5px;
-    max-width: 1000px;
-    width: 100%;
-    justify-items: center; /* Centers items horizontally within their grid area */
-    align-items: center; /* Centers items vertically within their grid area */
-  }
-
-  .grid-item {
-    /* Optionally, if you want to ensure images fit well */
-    display: flex; /* Allows centering within each grid item */
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  width: 100%; /* Full width of the grid item */
-  height: 100%; /* Full height of the grid item */
-  object-fit: cover; /* Ensures the image fills the grid item */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Breakpoints for responsive design */
+
+/* Small screens (mobile phones) */
+@media (max-width: 600px) {
+  #mainHeader, #mainFooter, h2, h3, p {
+      font-size: 1rem;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller columns for smaller screens */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #mainHeader, #mainFooter, h2, h3, p {
+      font-size: 1.2rem;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted column size */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  #mainHeader, #mainFooter, h2, h3, p {
+      font-size: 1.5rem;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Larger columns for large screens */
+  }
+}
